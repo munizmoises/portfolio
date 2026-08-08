@@ -1,6 +1,6 @@
 const CONFIG = {
 
-    status: 'disponivel',
+    status: 'parcial',
 
     textos: {
         disponivel: {
@@ -32,12 +32,12 @@ const CONFIG = {
     },
 };
 
-const faculdade = 'UVV';
+const faculdade = 'FAESA';
 
 const link_email = 'mailto:moisesmuniz199@gmail.com';
-const link_linkedin = 'https://www.linkedin.com/in/moisés-muniz/';
+const link_linkedin = 'https://www.linkedin.com/in/moisesmuniz/';
 const telefone = 'tel:+5527992295975';
-const link_github = 'https://github.com/Harfee';
+const link_github = 'https://github.com/munizmoises';
 
 document.querySelectorAll('.faculdade').forEach(el => el.innerHTML = faculdade);
 
