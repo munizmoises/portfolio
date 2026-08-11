@@ -2,7 +2,7 @@
 
 Este é o código-fonte do meu portfólio. Desenvolvi esse site para centralizar meus projetos acadêmicos, o que estou estudando na faculdade e minhas experiências práticas em um só lugar de forma organizada.
 
-🔗 **[Clique aqui para ver o portfólio rodando](https://harfee.github.io/portfolio/)**
+🔗 **[Clique aqui para ver o portfólio rodando](https://munizmoises.github.io/portfolio/)**
 
 ---
 
