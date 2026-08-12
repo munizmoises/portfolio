@@ -36,14 +36,12 @@ const faculdade = 'FAESA';
 
 const link_email = 'mailto:moisesmuniz199@gmail.com';
 const link_linkedin = 'https://www.linkedin.com/in/moisesmuniz/';
-const telefone = 'tel:+5527992295975';
 const link_github = 'https://github.com/munizmoises';
 
 document.querySelectorAll('.faculdade').forEach(el => el.innerHTML = faculdade);
 
 document.querySelectorAll('.link_email').forEach(el => el.href = link_email);
 document.querySelectorAll('.link_linkedin').forEach(el => el.href = link_linkedin);
-document.querySelectorAll('.telefone').forEach(el => el.href = telefone);
 document.querySelectorAll('.link_github').forEach(el => el.href = link_github);
 
 // APLICAR STATUS 
