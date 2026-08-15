@@ -745,7 +745,7 @@ section{
     color: #0769AD;
 }
 
-.tech_icone--sqlite{
+.tech_icone--sqlite, .tech_icone--electron{
     color: #0f80b6;
 }
 
