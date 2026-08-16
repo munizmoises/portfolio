@@ -253,15 +253,25 @@ function enviarContato() {
         return;
     }
 
-    // Monta o link mailto com os dados do formulário
-    const assunto = encodeURIComponent(`Contato pelo portfólio - ${nome}`);
-    const corpo   = encodeURIComponent(`Nome: ${nome}\nE-mail: ${email}\n\nMensagem:\n${msg}`);
-    window.location.href = `mailto:moisesmuniz199@gmail.com?subject=${assunto}&body=${corpo}`;
+    const templateParams = {
+        from_name: nome,
+        from_email: email,
+        message: msg
+    };
 
-    mostrarToast('Abrindo seu e-mail com a mensagem pronta!', 'sucesso');
-    document.getElementById('nomeContato').value = '';
-    document.getElementById('emailContato').value = '';
-    document.getElementById('msgContato').value = '';
+    mostrarToast('Enviando mensagem...', 'sucesso');
+
+    // Envio através do EmailJS
+    emailjs.send('service_0lxsl8o', 'template_rgi2zh1', templateParams)
+        .then(function(response) {
+            mostrarToast('Mensagem enviada com sucesso!', 'sucesso');
+            document.getElementById('nomeContato').value = '';
+            document.getElementById('emailContato').value = '';
+            document.getElementById('msgContato').value = '';
+        }, function(error) {
+            mostrarToast('Falha ao enviar mensagem. Tente novamente.', 'erro');
+            console.error('Erro EmailJS:', error);
+        });
 }
 
 function validarEmail(email) {
@@ -275,11 +285,20 @@ function mostrarToast(mensagem, tipo) {
 
     const toast = document.createElement('div');
     toast.className = `toast_feedback toast_feedback--${tipo}`;
-    toast.innerHTML = `
-        <i class="fa-solid ${tipo === 'sucesso' ? 'fa-circle-check' : 'fa-circle-exclamation'}"></i>
-        <span>${mensagem}</span>
-    `;
+    toast.setAttribute('role', 'status');
+    toast.setAttribute('aria-live', 'polite');
+
+    const icone = document.createElement('i');
+    icone.className = `fa-solid ${tipo === 'sucesso' ? 'fa-circle-check' : 'fa-circle-exclamation'}`;
+
+    const texto = document.createElement('span');
+    texto.textContent = mensagem;
+
+    toast.appendChild(icone);
+    toast.appendChild(texto);
+
     document.body.appendChild(toast);
+
     setTimeout(() => toast.classList.add('toast_feedback--visivel'), 10);
     setTimeout(() => {
         toast.classList.remove('toast_feedback--visivel');

@@ -761,6 +761,10 @@ section{
     color: #339933;
 }
 
+.tech_icone--spring{
+    color: #00FF7F;
+}
+
 .tech_icone--react{
     color: #61dafb;
 }
@@ -817,8 +821,16 @@ body.modo-claro .tech_icone--github{
     color: #1a2130;
 }
 
-body.modo-claro .tech_icone--node, .tech_icone--vuejs{
+body.modo-claro .tech_icone--node{
     color: #2d7a2d;
+}
+
+body.modo-claro .tech_icone--vuejs{
+    color: #00DC82;
+}
+
+body.modo-claro .tech_icone--spring{
+    color: #00DC82;
 }
 
 body.modo-claro .tech_icone--postgresql{
