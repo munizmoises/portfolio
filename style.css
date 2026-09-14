@@ -810,6 +810,10 @@ section{
     color: #FF3E00;
 }
 
+.tech_icone--flask{
+    color: #FFFFFF;
+}
+
 
 /* Modo claro */
 
@@ -854,6 +858,10 @@ body.modo-claro .tech_icone--cplusplus, .tech_icone--typescript{
 }
 
 body.modo-claro .tech_icone--nextjs{
+    color: #000000;
+}
+
+body.modo-claro .tech_icone--flask{
     color: #000000;
 }
 
@@ -1541,6 +1549,10 @@ body.modo-claro .certificado_status--andamento{
     .tecnologias_grid{
         grid-template-columns: repeat(2, 1fr);
     }
+    /* Sobrescreve as colunas definidas no HTML para evitar quebra no layout móvel */
+    .tecnologias_grid .tech_grupo[style] {
+        grid-column: 1 / -1 !important;
+    }
     .rodape_conteudo{
         grid-template-columns: 1fr 1fr;
         gap: 36px;
@@ -1588,7 +1600,13 @@ body.modo-claro .certificado_status--andamento{
     }
     .hero_botoes{
         flex-direction: column;
-        align-items: center;
+        align-items: stretch;
+        max-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .hero_botoes .botao {
+        justify-content: center;
     }
     .sobre_stats{
         grid-template-columns: repeat(3, 1fr);
@@ -1608,6 +1626,8 @@ body.modo-claro .certificado_status--andamento{
     .rodape_bottom{
         justify-content: center;
         text-align: center;
+        flex-direction: column;
+        gap: 10px;
     }
     .certificados_filtros{
         flex-direction: column;
@@ -1618,10 +1638,14 @@ body.modo-claro .certificado_status--andamento{
 @media(max-width: 480px){
     .hero_info-cards{
         flex-direction: column;
-        align-items: center;
+        align-items: stretch;
+    }
+    .hero_card-info {
+        justify-content: center;
     }
     .sobre_stats{
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
+        gap: 12px;
     }
     .cabecalho_marca{
         font-size: 1rem;
@@ -1630,6 +1654,19 @@ body.modo-claro .certificado_status--andamento{
         flex-direction: column;
         align-items: flex-start;
         gap: 8px;
+    }
+    .projeto_card-topo {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+    .projeto_numeros {
+        flex-direction: column;
+        gap: 12px;
+    }
+    .contato_link-item {
+        font-size: 0.8rem;
+        padding: 10px 14px;
     }
 }
 
