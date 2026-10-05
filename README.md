@@ -1,6 +1,6 @@
 # 💻 Meu Portfólio Pessoal
 
-Este é o código-fonte do meu portfólio. Desenvolvi esse site para centralizar meus projetos acadêmicos, o que estou estudando na faculdade e minhas experiências práticas em um só lugar de forma organizada.
+Este é o código-fonte do meu portfólio pessoal. Desenvolvi este site para centralizar meus projetos acadêmicos e pessoais, o andamento dos meus estudos em Ciência da Computação, minhas certificações e formas de contato.
 
 🔗 **[Clique aqui para ver o portfólio rodando](https://munizmoises.github.io/portfolio/)**
 
@@ -8,19 +8,29 @@ Este é o código-fonte do meu portfólio. Desenvolvi esse site para centralizar
 
 ## 🛠️ Como foi construído e por quê?
 
-Em vez de usar templates prontos, preferi estruturar tudo do zero para consolidar o que venho aprendendo na prática de Front-End:
+Em vez de usar templates prontos, criei o layout para consolidar o aprendizado prático no ecossistema Web e na estruturação de software:
 
-*   **Semântica de verdade:** Usei tags certas do HTML5 (`<nav>`, `<main>`, `<section>`) para o código ficar limpo, organizado e bom para acessibilidade.
-*   **Responsivo com Bootstrap:** Combinei o sistema de grid do Bootstrap com CSS customizado para garantir que o site fique alinhado tanto na tela do celular quanto no computador.
-*   **Foco em UI/UX:** Cuidei bastante dos detalhes visuais — paleta de cores limpa, botões com transições suaves e ícones bem posicionados para deixar a navegação agradável.
+* 🏗️ **HTML5 Semântico:** Estruturação limpa com tags semânticas (`<nav>`, `<main>`, `<section>`, `<footer>`) focando em organização, SEO e acessibilidade.
+* 🎨 **Estilização & Responsividade:** Utilização do Bootstrap combinado com CSS3 customizado, garantindo uma navegação fluida em desktops, tablets e dispositivos móveis.
+* ⚙️ **Interatividade & UI/UX:** Transições suaves, componentes visuais com ícones e seções bem definidas para facilitar a leitura e o direcionamento do visitante.
 
 ---
 
 ## 📂 O que você vai encontrar por aqui?
 
-O portfólio serve como um "hub" para os meus principais projetos, como:
-*   **Projeto ARCA:** O sistema de bem-estar animal que estamos desenvolvendo e melhorando a interface.
-*   **Fakeflix:** Uma réplica da Netflix que fiz para treinar layouts complexos e alinhamentos.
-*   Minhas certificações e o andamento do meu curso de Ciência da Computação.
+O portfólio funciona como um hub para expor minhas experiências e evolução técnica:
+
+* 🚀 **Projetos em Destaque:**
+  * **Consulta Perfil:** Sistema web criado para auxiliar a equipe de vendas da Perfil Alumínio do Brasil nas consultas de substituição de perfis e acessórios.
+  * **Projeto ARCA:** Redesign e reestruturação da interface do sistema de bem-estar animal com login dinâmico (Cidadão e ONG/Clínica).
+  * **FakeFlix:** Réplica da interface da Netflix focada no treino de layouts responsivos e alinhamentos.
+* 🛠️ **Tech Stack:** Minha evolução em linguagens (HTML5, CSS3, JS, Python), bancos de dados (MySQL, PostgreSQL), frameworks (Bootstrap, Flask) e ferramentas de versionamento (Git/GitHub).
+* 📜 **Certificações & Cursos:** Acompanhamento dos meus estudos na FAESA e cursos complementares (FIAP, FGV, etc.).
 
 ---
+
+## 📬 Contato
+
+- **E-mail:** moisesmuniz199@gmail.com
+- **GitHub:** [github.com/munizmoises](https://github.com/munizmoises)
+- **LinkedIn:** [linkedin.com/in/moisesmuniz](https://linkedin.com/in/moisesmuniz)
